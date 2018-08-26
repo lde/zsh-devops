@@ -1,7 +1,9 @@
 # ZSH-preset lde
 > Zsh preset, usable for dev, ops and devops
-<img src="sreen1.png">
-<img src="screen2.png">
+<img src="cli1.png">
+<img src="cli2.png">
+<img src="Git.png">
+<img src="Git2.png">
 
 ## Overview
 
@@ -27,11 +29,16 @@ MyMotivation is to provide a rich functionnal shell using only native functions 
 - Per user init shell script
 
 ### Per user init scripts
+Each user on system where this configuration is installed can create a `.zsh` folder in his home directory to set env vars,init rbenv pyenv or any other stuff. On each shell launch files in this directory will be sourced
 
 ## Install
+Copy folder `zshconfig` in this repository to your `/etc/zsh` folder
 
 ## License
-
+GNU GPLv3
 ## TODO
+Packaging
+
+PR welcome
 
 
