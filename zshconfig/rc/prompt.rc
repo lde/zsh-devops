@@ -1,0 +1,20 @@
+# for have colors
+autoload -U colors
+colors
+if [[ $GID -ne '0' ]]; then
+	host_color="green"
+else
+	host_color="red"
+fi
+path_color="blue"
+date_color="white"
+clock_color="cyan"
+returncode_color="green"
+host="%{$fg[$host_color]%}%n@%m"
+cpath="%B%{$fg[$path_color]%}%~%b"
+end="%{$reset_color%}%"
+clock="%{$fg[$clock_color]%}[%*-%D]"
+returncode="%{$fg[$returncode_color]%}%(?..%? )"
+varp="%(?.%{$fg[white]%}%#.%{$fg[red]%}%#)"
+branch="%B\$vcs_info_msg_0_%b"
+PS1="$clock $host $cpath $branch$returncode$varp$end "
